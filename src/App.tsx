@@ -1,13 +1,11 @@
-import { Content, Title } from './components'
+import { Content, Title, Cardi } from './components'
+
 
 function App() {
   return (
     <Content>
-      <div className="App">
-        <Title>
-          hello   
-        </Title>
-      </div>
+        <Title> hello </Title>
+        <Cardi>asd</Cardi>
     </Content>
   );
 }
