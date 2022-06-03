@@ -1,11 +1,14 @@
+import { Content, Title } from './components'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      hello
-      </header>
-    </div>
+    <Content>
+      <div className="App">
+        <Title>
+          hello   
+        </Title>
+      </div>
+    </Content>
   );
 }
 

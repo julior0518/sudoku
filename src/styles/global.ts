@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle<{theme: ThemeType}>`
                 margin: 0;
             
                 #root {
-                    background: radial-gradient(#282c34cc,#282c34);
+                    background: ${theme.colors.background};
                     color: ${theme.colors.black};
                     display: flex;
                     font-family: sans-serif;
