@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import { theme} from '../../styles/theme'
+import { theme } from '../../styles/theme'
 
 
 
-export const Cardi = styled.div`
+export const Card = styled.div`
         background-color: ${theme.colors.white};
         border-radius: 15px;
         display:  flex;

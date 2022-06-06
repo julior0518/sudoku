@@ -1,11 +1,11 @@
-import { Content, Title, Cardi } from './components'
+import { Content, Title, Card } from './components'
 
 
 function App() {
   return (
     <Content>
         <Title> hello </Title>
-        <Cardi>asd</Cardi>
+        <Card>asd</Card>
     </Content>
   );
 }
