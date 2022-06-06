@@ -1,5 +1,6 @@
 import { createGlobalStyle} from 'styled-components'
-import { theme, ThemeType } from './theme'
+import { theme} from './theme'
+import { ThemeType } from '../typings'
 
 const GlobalStyle = createGlobalStyle<{theme: ThemeType}>`
         html {

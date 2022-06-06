@@ -8,5 +8,3 @@ export const theme = {
     },
     transition: '0.3s'
 }
-
-export type ThemeType = typeof theme; 
