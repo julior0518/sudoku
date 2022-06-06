@@ -1,4 +1,5 @@
 import {GRID, NUMBERS} from '../typings'
+import { Shuffle } from '.';
 
 // const grid = [
 //     [0,0,0,0,0,0,0,0,0],
@@ -24,8 +25,8 @@ function fillgrid(grid: GRID) {
         col = i % 9
 
         if (grid[row][col] === 0) {
-            
-
+            Shuffle(initialNumbers)
+            break
         }
     }
     
