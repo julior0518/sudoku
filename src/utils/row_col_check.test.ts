@@ -4,7 +4,9 @@ import { GRID } from '../typings'
 
 
 describe('isInCol', ()=>{
+    
     it('value is in Column',()=>{
+
         const grid: GRID = [
             [8,4,2,6,5,1,3,9,7],
             [5,3,7,2,8,9,6,4,1],
@@ -16,12 +18,12 @@ describe('isInCol', ()=>{
             [2,8,5,9,6,3,7,1,4],
             [3,1,9,3,1,7,8,5,6]
         ]
-
         expect(isInCol({col: 0, grid, value:9, row: 0})).toBeTruthy()
         expect(isInCol({col: 5, grid, value:9, row: 0})).toBeTruthy()
-
     })
+
     it('Value is NOT in Column',()=>{
+
         const grid: GRID = [
             [8,4,2,6,5,1,3,0,7],
             [5,3,7,2,8,0,0,4,1],
@@ -33,14 +35,13 @@ describe('isInCol', ()=>{
             [2,8,5,0,6,3,7,1,4],
             [3,1,9,3,1,7,8,5,6]
         ]
-
         expect(isInCol({col: 0, grid, value:9, row: 0})).toBeFalsy()
         expect(isInCol({col: 5, grid, value:9, row: 0})).toBeFalsy()
-
     })
 })
 
 describe('isInRow', ()=>{
+
     it('value is in Row',()=>{
         const grid: GRID = [
             [8,4,2,6,5,1,3,9,7],
@@ -53,11 +54,10 @@ describe('isInRow', ()=>{
             [2,8,5,9,6,3,7,1,4],
             [3,1,9,3,1,7,8,5,6]
         ]
-
         expect(isInRow({col: 0, grid, value:9, row: 0})).toBeTruthy()
         expect(isInRow({col: 0, grid, value:9, row: 4})).toBeTruthy()
-
     })
+
     it('Value is NOT in Row',()=>{
         const grid: GRID = [
             [8,4,2,6,5,1,3,0,7],
@@ -70,9 +70,7 @@ describe('isInRow', ()=>{
             [2,8,5,0,6,3,7,1,4],
             [3,1,9,3,1,7,8,5,6]
         ]
-
         expect(isInRow({col: 0, grid, value:9, row: 0})).toBeFalsy()
         expect(isInRow({col: 0, grid, value:9, row: 5})).toBeFalsy()
-
     })
 })
