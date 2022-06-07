@@ -11,7 +11,6 @@ describe('', () => {
         ]
 
         expect(squareCheck({ square, value: 1})).toBeTruthy()
-        expect(squareCheck({ square, value: 9})).toBeTruthy()
     })
 
     it( "when value is NOT in grid square", ()=>{
