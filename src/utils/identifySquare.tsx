@@ -6,7 +6,7 @@ interface IInput {
     col: number
 }
 
-function identifySquare ({grid, col, row}:IInput): SQUARE {
+function identifySquare ({grid, col, row}:IInput): SQUARE{
     const square = []
 
     if (row < 3){

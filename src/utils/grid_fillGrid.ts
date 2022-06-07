@@ -32,18 +32,20 @@ function fillgrid(grid: GRID) {
                 if (!isInRow({ grid, row, value, col })){
                     if (!isInCol({grid, row, value, col})){
                         const square = identifySquare ({col, grid, row})
-                        if(!squareCheck({ square, value})){
+                        if(!squareCheck({ square, value })){
                             grid[row][col] = value
                             if (gridCheck(grid)) return true
-                            else if (fillgrid(grid)) return true
+                            else if (!fillgrid(grid)) return true
                         }
                     }
                 }
-                grid[row][col] = value
-            }
             break
+
+            }
         }
     }
+    grid[row][col] = 0
+
 }
 
 export default fillgrid;

@@ -1,5 +1,4 @@
-import { forEachTrailingCommentRange } from 'typescript'
-import {GRID, N, NUMBERS} from '../typings'
+import {GRID, NUMBERS} from '../typings'
 
 interface IInput {
     grid: GRID
